@@ -201,4 +201,91 @@ Berikut adalah gambaran relasi antar tabel:
 1. Siswa & Kursus: Melalui Enrollments (Siswa mendaftar ke Kursus melalui Jadwal)
 2. Pengajar & Kursus: Melalui Schedules (Pengajar mengajar Kursus melalui Jadwal)
 
+---
+# 🧭 Alur Penggunaan Aplikasi IT Learning
 
+Dokumentasi alur penggunaan lengkap untuk setiap jenis pengguna dalam sistem pembelajaran daring "IT Learning".
+
+---
+
+## 👩‍💼 1. Admin
+
+### Alur Aktivitas:
+
+1. Login sebagai Admin
+2. Akses Dashboard: lihat statistik siswa, pengajar, dan kursus
+3. Kelola User:
+   - Tambah/edit/hapus siswa & pengajar
+4. Kelola Kursus:
+   - Tambah/edit kursus, ubah status aktif
+5. Atur Jadwal Kursus:
+   - Tentukan pengajar, waktu, lokasi
+6. Pantau Pendaftaran & Pembayaran
+7. Pantau Aktivitas Forum
+8. Lihat Ulasan & Penilaian dari siswa
+9. Logout
+
+---
+
+## 👨‍🏫 2. Pengajar
+
+### Alur Aktivitas:
+
+1. Login sebagai Pengajar
+2. Akses Dashboard: lihat kursus yang diajar dan jadwal kelas
+3. Kelola Materi:
+   - Tambah modul & pelajaran
+   - Upload konten (teks, video, PDF)
+4. Kelola Tugas:
+   - Buat tugas untuk pelajaran
+   - Tentukan deadline dan poin
+5. Nilai Tugas:
+   - Lihat pengumpulan tugas
+   - Berikan nilai dan komentar
+6. Kelola Jadwal Kelas
+7. Ikuti Diskusi Forum:
+   - Balas pertanyaan dari siswa
+8. Lihat Ulasan
+9. Edit Profil
+10. Logout
+
+---
+
+## 👨‍🎓 3. Siswa
+
+### Alur Aktivitas:
+
+1. Registrasi akun (isi data lengkap)
+2. Login sebagai Siswa
+3. Akses Dashboard: lihat status kursus, jadwal, sertifikat
+4. Daftar Kursus:
+   - Pilih jadwal
+   - Kirim pendaftaran
+5. Lakukan Pembayaran
+6. Akses Materi:
+   - Pelajari modul dan pelajaran
+7. Kerjakan Tugas:
+   - Lihat dan kumpulkan tugas
+   - Cek nilai dan feedback
+8. Ikuti Forum:
+   - Ajukan pertanyaan
+   - Balas diskusi lain
+9. Unduh Sertifikat setelah menyelesaikan kursus
+10. Berikan Review/Ratings
+11. Edit Profil
+12. Logout
+
+---
+
+## 🔁 Alur Umum Sederhana
+
+```text
+SISWA:
+→ Registrasi → Login → Daftar Kursus → Bayar → Belajar
+→ Kerjakan Tugas → Forum → Sertifikat → Review
+
+PENGAJAR:
+→ Login → Kelola Materi → Kelola Tugas → Nilai → Forum
+
+ADMIN:
+→ Login → Kelola User/Kursus → Jadwal → Pantau Proses
