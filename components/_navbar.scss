@@ -1,0 +1,38 @@
+.navbar {
+  background-color: rgb(254, 241, 232) !important;
+  padding: 35px 0;
+
+  @include media-breakpoint-down(sm) {
+    padding: 10px 0;
+  }
+
+  .navbar-nav {
+    .nav-link {
+      margin-right: 40px;
+      color: $black;
+      font-weight: map-get($font-weights, medium);
+
+      &.active {
+        color: $button;
+        font-weight: map-get($font-weights, bold);
+      }
+    }
+  }
+  .navbar-auth {
+    .nav-link {
+      color: $black;
+      font-weight: map-get($font-weights, medium);
+    }
+  }
+
+  &.scrolled {
+    padding: 10px 0;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.07);
+
+    .navbar-brand {
+      img {
+        max-width: 150px;
+      }
+    }
+  }
+}
