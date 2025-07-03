@@ -1,0 +1,112 @@
+1. apa itu algoritma
+2. jelaskan pseudocode dan flowchart
+3. buatlah flowchart untuk mencari nilai minimal dari dua angka kemudian buatlah bahasa pemrograman java
+4. sebutkan dan jelaskan operator aritmatika dan perbandingan dalam pemrograman java. berikan contoh penggunaan masing2 operator
+5. carilah struktur perulangan percabangan dan method dalam pemrograman java
+6. buatkan sebuah array dengan type String dengan nama var Siswa yang berisi nama suci, aden, januar, dimas, putra
+
+JAWABAN!
+1. algoritma adalah urutan langkah2 sistematis yg dignakan untuk menyelesaikan masalah atau mencapai tujan tertentu dalam komputasi atau matematika.
+2. - Psedocode adalah representasi informal dan algoritma atau logika promgram yang ditulis dalam bentuk bahsa yang mirip dengan bahasa pemrograman, tetapi lebih mudah dipahami oleh manusia.
+   - Flowchart adalah representasi grafis dari algoritma atau proses yang menggunakan simbol2 grafis untuk menggambarkan langkah2 dalam suatu proses secara visual.
+3. Flowchart : Mulai -> Masukkan dua angka A dan B -> Bandingkan nilai A dan B -> Apakah A<B? -> YA -> Cetak nilai A sebagai nilai minimum -> Selesai
+   Pseudocode :
+	import util.java.Scanner;
+
+	public class MinimunValue {
+		public static void main(String[] args) {
+
+			Scanner fanskuy = new Scanner(System.in);
+
+			System.out.print("Masukkan angka pertama : ");
+			double angka1 = fanskuy.nextDouble();
+			System.out.print("Masukkan angka kedua : ");
+			double angka2 = fanskuy.nextDouble();
+
+			double minimal = (angka1 < angka2) ? angka1 : angka2;
+
+			System.out.print("Nilai minimal adalah : " + minimal);
+
+			fanskuy.close();
+		}
+	}
+
+4. Operator Aritmatika
+   (+) digunakan untuk menambahkan satu nilai dari nilai lain. Contoh: int hasil = 5 + 3;
+   (-) digunakan untuk mengurangkan satu nilai dari nilai lain. Contoh: int hasil = 5 - 3;
+   (*) digunakan untuk mengkalikan satu nilai dari nilai lain. Contoh: int hasil = 5 * 3;
+   (/) digunakan untuk membagi satu nilai dari nilai lain. Contoh: double hasil = 5 / 3;
+   (%) digunakan untuk mendapatkan sisa pembagian dari dua nilai. Contoh: int sisa = 10 % 3;
+   (++) digunakan untuk menambah nilai variable sebesar 1. Contoh: int x = 5; x++;
+   (--) digunakan untuk mengurangi nilai variable sebesar 1. Contoh: int x = 5; x--;
+
+   Operator Perbandingan
+   (==) menghasilkan true jika dua nilai sama. Contoh: boolean hasil = (5 == 5);
+   (!=) menghasilkan true jika dua nilai tidak sama. Contoh: boolean hasil = (4 != 5);
+   (>) menghasilkan true jika nilai kiri lebih besar dari nilai kanan. Contoh: boolean hasil = (7 > 3);
+   (<) menghasilkan true jika nilai kanan lebih besar dari nilai kiri. Contoh: boolean hasil = (4 < 7);
+   (>=) menghasilkan true jika nilai kiri lebih besar dari atau sama dengan nilai kanan. Contoh: boolean hasil = (6 >= 6);
+   (>=) menghasilkan true jika nilai kiri lebih kecil dari atau sama dengan nilai kanan. Contoh: boolean hasil = (3 >= 6);
+
+5. Perulangan 'for'
+	for (int i = 0; i < 5; i++) {
+		System.out.print(i);
+	}
+   Perulangan 'while'
+	int i = 0;
+	while (i < 5) {
+		System.out.print(i);
+	}
+   Perulangan 'do-while'
+	int i = 0;
+	do {
+	  System.out.print(i);
+	  i++;
+	} while (i < 5);
+
+   Percabangan 'if'
+	int x = 10;
+	if (x > 5) {
+		System.out.print("x lebih besar dari 5");
+	}
+   Percabangan 'if-else'
+	int x = 3;
+	if (x > 5) {
+		System.out.print("x lebih besar dari 5");
+	} else {
+		System.out.print("x lebih kecil dari 5");
+	}
+   Percabangan 'switch'
+	int nilai = 2;
+	switch (nilai) {
+		case 1:
+			System.out.print("nilai lebih besar dari 1");
+		break;
+		case 2:
+			System.out.print("nilai lebih besar dari 2");
+		break;
+		default:
+			System.out.print("nilai tidak dikenali");
+	}
+
+   Method
+	public class ContohMethod {
+		public static void main(String[] args) {
+			sayHello();
+		}
+
+		public static void sayHello() {
+			System.out.print("Hello World!");
+		}
+	}
+
+6. public class Main{
+	public static void main(String[] args) {
+		String[] siswa = {"suci", "aden", "januar", "putra", "dimas"};
+		
+		System.out.print("Nama siswa: ");
+		for (String nama : siswa) {
+			System.out.print(nama);
+		}
+	}
+   }

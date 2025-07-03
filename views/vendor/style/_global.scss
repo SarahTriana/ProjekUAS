@@ -1,0 +1,300 @@
+@import "colors";
+@import "fonts";
+
+* {
+  list-style: none;
+  text-decoration: none !important;
+  transition: 0.3s ease-in-out all;
+  font-family: "Work Sans", sans-serif;
+}
+
+.container {
+  max-width: 1345px;
+  padding: 0 20px;
+}
+
+.section-margin {
+  margin-top: 180px;
+
+  @include media-breakpoint-down(sm) {
+    margin-top: 130px;
+  }
+}
+
+.label-section {
+  font-weight: map-get($font-weights, medium);
+  font-size: 25px;
+  color: $black;
+  margin-bottom: 45px;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 18px;
+  }
+}
+
+.heading-section {
+  font-weight: map-get($font-weights, medium);
+  font-size: 40px;
+  color: $black;
+
+  @include media-breakpoint-down(sm) {
+    font-size: 25px;
+  }
+  @include media-breakpoint-between(md, lg) {
+    font-size: 32px;
+  }
+}
+.subheading-section {
+  font-weight: map-get($font-weights, light);
+}
+
+// HOME SECTION CSS
+.home {
+  background-color: rgb(254, 241, 232);
+  padding-top: 200px;
+  height: 100vh;
+
+  @include media-breakpoint-down(xxl) {
+    padding-top: 180px;
+  }
+  @include media-breakpoint-down(sm) {
+    padding-top: 120px;
+  }
+
+  .heading-home {
+    font-weight: map-get($font-weights, bold);
+    font-size: 46px;
+    color: $black;
+
+    .prop {
+      color: $primary;
+    }
+    .kre {
+      color: $button;
+    }
+
+    @include media-breakpoint-down(xxl) {
+      font-size: 40px;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 32px;
+    }
+  }
+  .subheading-home {
+    margin-top: 30px;
+    font-weight: map-get($font-weights, light);
+    color: $black;
+    font-size: 20px;
+
+    @include media-breakpoint-down(xxl) {
+      font-size: 18px;
+    }
+    @include media-breakpoint-down(sm) {
+      font-size: 16px;
+    }
+  }
+
+  .btn-home {
+    margin-top: 125px;
+    @include media-breakpoint-between(md, lg) {
+      margin-top: 70px;
+    }
+    @include media-breakpoint-down(sm) {
+      margin-top: 50px;
+    }
+  }
+
+  @include media-breakpoint-down(xxl) {
+    .home-thumbnail {
+      max-width: 600px;
+      max-height: 475px;
+    }
+  }
+}
+
+//CATEGORY SECTION CSS
+.category {
+  i {
+    font-size: 50px;
+    color: $primary;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 30px;
+    }
+  }
+  .card {
+    border: 3px solid $orange;
+    border-radius: 8px !important;
+    img {
+      max-width: 80px;
+      max-height: 80px;
+    }
+    padding: 46px 35px;
+
+    .caption {
+      h3 {
+        font-weight: map-get($font-weights, bold);
+        font-size: 20px;
+        color: $primary;
+      }
+    }
+
+    &:hover {
+      background-color: $orange;
+
+      .caption {
+        h3,
+        p {
+          color: #fff;
+        }
+      }
+    }
+  }
+}
+
+// PRODUCT SECTION CSS
+.product {
+  i {
+    font-size: 50px;
+    color: $primary;
+
+    @include media-breakpoint-down(sm) {
+      font-size: 30px;
+    }
+  }
+  .card {
+    border: none;
+
+    .title-class {
+      font-weight: map-get($font-weights, medium);
+      font-size: 20px;
+    }
+    .category-name {
+      background-color: $secondary;
+    }
+    .price {
+      font-weight: map-get($font-weights, bold);
+      font-size: 25px;
+      color: $primary;
+    }
+    .rate {
+      i {
+        font-size: 30px;
+        color: #ebef17;
+        @include media-breakpoint-down(sm) {
+          font-size: 20px;
+        }
+      }
+    }
+    .thumbnail {
+      max-width: 430px;
+      max-height: 290px;
+      overflow: hidden;
+      border-radius: 10px;
+
+      .caption-img {
+        bottom: 20px;
+        left: 20px;
+      }
+      img {
+        &:hover {
+          transform: scale(1.1);
+          object-fit: cover;
+        }
+      }
+    }
+  }
+}
+
+// ABOUT SECTION CSS
+.about {
+  img {
+    max-width: 550px;
+    max-height: 550px;
+
+    @include media-breakpoint-down(xxl) {
+      max-width: 500px;
+      max-height: 500px;
+    }
+    @include media-breakpoint-between(md, lg) {
+      max-width: 400px;
+      max-height: 400px;
+    }
+    @include media-breakpoint-down(sm) {
+      max-width: 300px;
+      max-height: 300px;
+    }
+  }
+}
+
+// TESTIMONI SECTION CSS
+.testi {
+  background-color: $secondary;
+  padding: 120px 0;
+
+  .card {
+    background-color: $primary;
+    padding: 40px 30px;
+    border: none;
+    border-radius: 10px;
+
+    .rate {
+      i {
+        font-size: 20px;
+        color: #ebef17;
+      }
+    }
+    .detail {
+      i {
+        font-size: 50px;
+        color: $secondary;
+      }
+    }
+  }
+}
+
+// CTA SECTION CSS
+.cta {
+  .thumbnail {
+    max-width: 600px;
+    max-height: 560px;
+
+    @include media-breakpoint-down(xxl) {
+      max-width: 580px;
+      max-height: 540px;
+    }
+  }
+}
+
+// Footer SECTION CSS
+.footer {
+  background-color: $orange;
+  padding-top: 60px;
+  border-radius: 50px 50px 0px 0px;
+  @include media-breakpoint-down(md) {
+    border-radius: 30px 30px 0px 0px;
+  }
+
+  .row-content {
+    padding-bottom: 80px;
+  }
+  .icons {
+    i {
+      font-size: 50px;
+      color: #fff;
+    }
+  }
+  h3 {
+    font-weight: map-get($font-weights, bold);
+    font-size: 25px;
+    margin-bottom: 30px;
+    color: $secondary;
+  }
+  ul {
+    padding: 0;
+    li {
+      color: #fff;
+      margin-top: 20px;
+    }
+  }
+}

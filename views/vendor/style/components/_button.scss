@@ -1,0 +1,36 @@
+@import "../fonts";
+@import "../colors";
+
+.btn-master {
+  padding: 15px 30px;
+  border-radius: 50px;
+  font-weight: map-get($font-weights, medium);
+
+  @include media-breakpoint-down(sm) {
+    padding: 10px 20px;
+  }
+}
+
+.btn-first {
+  @extend .btn-master;
+  color: #fff !important;
+  background-color: $button;
+  border: none;
+
+  &:hover {
+    background-color: $button-hover;
+    color: rgb(213, 213, 213);
+  }
+}
+
+.btn-second {
+  @extend .btn-master;
+  color: $button;
+  border: 2px solid $button;
+
+  &:hover {
+    color: #fff;
+    background-color: $button;
+    border: 2px solid rgba(247, 110, 17, 0.1);
+  }
+}
