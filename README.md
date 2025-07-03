@@ -3,7 +3,7 @@ Projek UAS Mata Kuliah Pemrograman WEB ( Pengampu Mata Kuliah : Ir. Abadi Nugrah
 ---
 ## Documentasi
 
-![Video Penjelasan](https://youtu.be/eRmWKE0ehrE)
+![Video Penjelasan(https://img.youtube.com/vi/eRmWKE0ehrE/maxresdefault.jpg)](https://youtu.be/eRmWKE0ehrE)
 
 ### Cara Instalasi Singkat ( Highlight Langkah Penting )
   1. Persiapan
